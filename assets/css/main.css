@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+html {
+  font-family: "Lato", sans-serif; }
+
+body {
+  background-color: #3c32be;
+  color: #fff; }
+
+.title {
+  margin-top: 157px;
+  font-size: 69px; }
+
+.subtitle {
+  display: flex; }
+  .subtitle h2 {
+    padding-top: 0;
+    font-size: 210px; }
+
+.background-default {
+  background-color: #322d9c;
+  border: none; }
+
+.form-box {
+  margin-top: 10px; }
+  .form-box .position-default {
+    margin-left: -32px;
+    padding-right: 20px; }
+  .form-box .height-default {
+    height: 120px; }
+  .form-box .labels {
+    position: absolute;
+    top: -30px; }
+  .form-box #box-change-three {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #322d9c; }
+    .form-box #box-change-three:hover, .form-box #box-change-three:visited, .form-box #box-change-three:focus {
+      background-color: #322d9c; }
+
+.result-header {
+  margin-top: 60px; }
+  .result-header .result-header-content {
+    display: flex;
+    align-items: center; }
+    .result-header .result-header-content .result-header-title h1 {
+      font-size: 55.61px; }
+    .result-header .result-header-content .result-header-title p {
+      font-size: 157.57px; }
+
+#message {
+  padding: 50px 0;
+  background-color: #302aab;
+  font-weight: bolder; }
+  #message h2 {
+    font-size: 39.18px; }
+
+#show-tables {
+  margin: 50px 0 100px 0; }
+  #show-tables button {
+    border-radius: 0;
+    background-color: #36d8fb;
+    font-size: 25.57px;
+    line-height: 1.2;
+    padding: 20px 30px; }
+
+#tables {
+  margin-bottom: 110px; }
+  #tables h3 {
+    margin-bottom: 10px; }
+    #tables h3 span {
+      font-size: 15px; }
+  #tables .tables-content {
+    background-color: #322d9c; }
+  #tables .middle-column {
+    padding: 0 20px; }
+
+.list li {
+  padding: 10px 20px; }
+  .list li p {
+    font-size: 16px; }
+.list li:nth-child(even) {
+  background-color: #302aab; }
+
+/*# sourceMappingURL=main.css.map */
