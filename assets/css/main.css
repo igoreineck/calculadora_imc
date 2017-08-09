@@ -39,12 +39,17 @@ q:before, q:after {
 blockquote, q {
   quotes: "" ""; }
 
-html {
+html h1,
+html h2,
+html h3,
+html h4,
+html p {
   font-family: "Lato", sans-serif; }
 
 body {
   background-color: #3c32be;
-  color: #fff; }
+  color: #fff;
+  transition: all 0.5s linear; }
 
 .title {
   margin-top: 157px;
@@ -62,6 +67,10 @@ body {
 
 .form-box {
   margin-top: 10px; }
+  .form-box input,
+  .form-box input:focus {
+    color: #fff;
+    font-size: 58px; }
   .form-box .position-default {
     margin-left: -32px;
     padding-right: 20px; }
@@ -121,5 +130,55 @@ body {
     font-size: 16px; }
 .list li:nth-child(even) {
   background-color: #302aab; }
+
+@media (max-width: 920px) {
+  .subtitle .thumb {
+    margin-left: 35vw !important; }
+
+  #group-one .labels h3 {
+    margin-left: 15vw !important; } }
+@media (max-width: 768px) {
+  .subtitle {
+    display: block; }
+    .subtitle h2 {
+      font-size: 150px; }
+    .subtitle .thumb {
+      width: 200px;
+      height: 200px;
+      margin-left: 15vw; }
+
+  .form-box {
+    margin-top: 150px; }
+    .form-box .labels {
+      top: 110px;
+      margin-left: 20vw; }
+    .form-box #box-change-one,
+    .form-box #box-change-two,
+    .form-box #box-change-three {
+      margin-left: 40vw; }
+      .form-box #box-change-one input:focus,
+      .form-box #box-change-two input:focus,
+      .form-box #box-change-three input:focus {
+        color: #fff; }
+    .form-box #box-change-three {
+      position: relative !important;
+      top: 0;
+      right: 0;
+      background-color: #302aab; }
+
+  .result-header-content {
+    display: block !important; }
+    .result-header-content .thumb {
+      width: 200px;
+      height: 200px;
+      margin-left: 18vw; }
+    .result-header-content .result-header-title h1 {
+      margin-top: 50px !important; }
+
+  #show-tables button {
+    font-size: 18px; }
+
+  #tables h3 {
+    margin-top: 30px; } }
 
 /*# sourceMappingURL=main.css.map */

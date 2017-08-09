@@ -1,19 +1,35 @@
 /*
 Error: Undefined variable: "$font".
-        on line 1 of C:\Users\Igor\Projetos\app_imc\assets\sass\components\body.scss
+        on line 6 of C:\Users\Igor\Projetos\calculadora_imc\assets\sass\components\body.scss
 
-1: html { font-family: $font }
-2: 
-3: body {
-4:     background-color: $background;
-5:     color: $band-light;
-6: }
+1: html { 
+2:     h1,
+3:     h2,
+4:     h3,
+5:     h4,
+6:     p { font-family: $font }
+7: }
+8: 
+9: body {
+10:     background-color: $background;
+11:     color: $band-light;
 
 Backtrace:
-C:\Users\Igor\Projetos\app_imc\assets\sass\components\body.scss:1
+C:\Users\Igor\Projetos\calculadora_imc\assets\sass\components\body.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -57,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font\".\A         on line 1 of C:\Users\Igor\Projetos\app_imc\assets\sass\components\body.scss\A \A 1: html { font-family: $font }\A 2: \A 3: body {\A 4:     background-color: $background;\A 5:     color: $band-light;\A 6: }"; }
+  content: "Error: Undefined variable: \"$font\".\A         on line 6 of C:\Users\Igor\Projetos\calculadora_imc\assets\sass\components\body.scss\A \A 1: html { \A 2:     h1,\A 3:     h2,\A 4:     h3,\A 5:     h4,\A 6:     p { font-family: $font }\A 7: }\A 8: \A 9: body {\A 10:     background-color: $background;\A 11:     color: $band-light;"; }

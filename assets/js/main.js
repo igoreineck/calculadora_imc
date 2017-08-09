@@ -15,8 +15,9 @@ jQuery(document).ready(function($){
 
         let total = Math.round(peso/Math.pow(altura, 2)).toFixed(1);
 
-        resultado.text(total);
+        var valor_tabela = resultado.text(total);
 
+        // Lógica das mensagems de classificação a serem implementadas aqui...
     });
 
     let peso = $('#peso'),
@@ -46,6 +47,7 @@ jQuery(document).ready(function($){
         $('.main-content').hide(50);
         $('.result-header').removeClass('hide');
         $('#message').removeClass('hide');
+        $('#show-tables').removeClass('hide');
     });
 
     $('#show-tables button').click(function() {
