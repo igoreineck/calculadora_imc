@@ -88,7 +88,7 @@ jQuery.noConflict();
         $('#show-tables').removeClass('hide');
     });
 
-    $('#show-tables button').click(function() {
+    $('#show-tables button').on('click', function() {
         $('#tables').toggleClass('hide');
     });
 })(jQuery);
