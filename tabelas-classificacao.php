@@ -1,22 +1,3 @@
-<?php  
-
-$values = [
-    'kid'   => [
-        'baixo peso'    => '< 18.5',
-        'eutrofia'      => '18.5 a 24.9',
-        'excesso de peso'       => '25 a 29.9',
-        'obesidade'     => '> 30'
-
-    ],
-    'adult' => [
-        'baixo peso'
-    ],
-    'old'   => []
-];
-
-var_dump($values);
-?>
-
 <div id="tables" class="hide">
     <div class="container">
         <div class="row">

@@ -2,13 +2,102 @@
 <?php  include 'header.php' ?>
 
 <?php
-    setcookie('idade', $_POST['idade']);
-
-    $peso = $_COOKIE['peso'];
+    $peso   = $_COOKIE['peso'];
     $altura = $_COOKIE['altura'];
-    $idade = $_COOKIE['idade'];
+    $idade  = $_POST['idade'];
 
     $imc = round( ( $peso / pow($altura, 2) ), 2 );
+
+    $mensagem       = '';
+    $resposta_boa   = 'Parabéns, você está no ';
+    $resposta_ruim  = '. Ops, está na hora de rever os seus hábitos ';
+    $smiley         = ' :)';
+    $sad            = ':/';
+
+    $situacao = [
+        '[Risco de desnutrição]',
+        '[Desnutrição]',
+        '[Baixo peso]',
+        '[Peso ideal]',
+        '[Excesso de peso]',
+        '[Pré-obesidade]',
+        '[Obesidade]',
+        '[Obesidade, grau I]',
+        '[Obesidade, grau II]',
+        '[Obesidade mórbida]'
+    ];
+
+    if( $idade <= 20 ) {
+        if( $imc < 18.5 ) {
+
+            $mensagem = $situacao[2] . $resposta_ruim . $sad;
+
+        } elseif ( $imc >= 18.5 && $imc < 25 ) {
+
+            $mensagem = $resposta_boa . $situacao[3] . $smiley;
+
+        } elseif ( $imc >= 25 && $imc < 30 ) {
+
+            $mensagem = $situacao[4] . $resposta_ruim . $sad;
+
+        } else {
+
+            $mensagem = $situacao[6] . $resposta_ruim . $sad;
+
+        }
+    } elseif ( $idade > 20 && $idade <= 65 ) {
+
+        if( $imc < 18.5 ) {
+
+            $mensagem = $situacao[2] . $resposta_ruim . $sad;
+
+        } elseif ( $imc >= 18.5 && $imc < 25 ) {
+
+            $mensagem = $resposta_boa . $situacao[3] . $smiley;
+
+        } elseif ( $imc >= 25 && $imc < 30 ) {
+
+            $mensagem = $situacao[5] . $resposta_ruim . $sad;
+
+        } elseif ( $imc >= 30 && $imc < 35 ) {
+
+            $mensagem = $situacao[7] . $resposta_ruim . $sad;
+
+        } elseif ( $imc >= 35 && $imc < 40 ) {
+
+            $mensagem = $situacao[8] . $resposta_ruim . $sad;
+
+        } else {
+
+            $mensagem = $situacao[9] . $resposta_ruim . $sad;
+
+        }
+
+    } else {
+
+        if( $imc < 22 ) {
+
+            $mensagem = $situacao[1] . $resposta_ruim . $sad;
+
+        } elseif ( $imc >= 22 && $imc < 24 ) {
+
+            $mensagem = $situacao[0] . $resposta_ruim . $sad;
+
+        } elseif ( $imc >= 24 && $imc < 27 ) {
+
+            $mensagem = $resposta_boa . $situacao[3] . $smiley;
+
+        } elseif ( $imc >= 27 && $imc < 32 ) {
+
+            $mensagem = $situacao[5] . $resposta_ruim . $sad;
+
+        } else {
+
+            $mensagem = $situacao[6] . $resposta_ruim . $sad;
+
+        }
+
+    }
 ?>
 
 <div class="container">
@@ -24,6 +113,7 @@
                     <div class="col-md-8">
                         <div class="result-header-title text-center">
                             <h1>Seu IMC é</h1>
+                            <p id="resultado"><?php echo $imc ?></p>
                         </div>
                     </div>
                 </div>
@@ -33,7 +123,7 @@
 </div>  
 
 <div id="message" class="container-fluid">    
-    <h2 class="text-center"><?php echo $imc ?></h2>
+    <h2 class="text-center"><?php echo $mensagem ?></h2>
 </div>
 
 <div id="show-tables">
